@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="css/owfont-regular.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-container">
+        <div class="player-info">
+          <div class="track-info">
+            <div class="track-name">Aqua Caelestis</div>
+            <div class="track-duration">
+              <div class="current">00:00</div>
+              <div class="length">00:39</div>
+            </div>
+          </div>
+          <div class="timeline">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        </div>
+        <div class="player-volume">
+          <div class="mute-btn"></div>
+          <input class="volume-level" type="range" min="0" max="1" value="1" step="0.01">
+        </div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" placeholder="[Enter city]">
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name">
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="quote-container">
+      <button class="change-quote"></button>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="options">
+      <div class="setting">
+        <div class="setting-container">
+          <div class="image-source">
+            <p class="setting-title"></p>
+            <div class="radio-btns">
+              <label for="github">
+                <input class="setting-inputs" type="radio" name="radio" id="github" value="github">
+                <span class="radio-btn">GitHub</span>
+              </label>
+              <label for="unsplash">
+                <input class="setting-inputs" type="radio" name="radio" id="unsplash" value="unsplash">
+                <span class="radio-btn">Unsplash</span>
+              </label>
+              <label for="flickr">
+                <input class="setting-inputs" type="radio" name="radio" id="flickr" value="flickr">
+                <span class="radio-btn">Flickr</span>
+              </label>
+            </div>
+            <input class="background-tag" type="text" disabled>
+          </div>
+          <div class="display-items">
+            <p class="setting-title">Hide/Show elements:</p>
+            <div class="check-boxes">
+              <label for="time">
+                <input class="setting-inputs" type="checkbox" name="checkbox-time" id="time">
+                <span class="check-box"></span>
+              </label>
+              <label for="date">
+                <input class="setting-inputs" type="checkbox" name="checkbox-date" id="date">
+                <span class="check-box"></span>
+              </label>
+              <label for="greeting">
+                <input class="setting-inputs" type="checkbox" name="checkbox-greeting" id="greeting">
+                <span class="check-box"></span>
+              </label>
+              <label for="quote">
+                <input class="setting-inputs" type="checkbox" name="checkbox-quote" id="quote">
+                <span class="check-box"></span>
+              </label>
+              <label for="player">
+                <input class="setting-inputs" type="checkbox" name="checkbox-player" id="player">
+                <span class="check-box"></span>
+              </label>
+              <label for="weather">
+                <input class="setting-inputs" type="checkbox" name="checkbox-weather" id="weather">
+                <span class="check-box"></span>
+              </label>
+            </div>
+          </div>
+          <div class="language">
+            <p class="setting-title">Choose language:</p>
+            <div class="language-btns">
+              <button id="en" class="lang-btn">English</button>
+              <button id="ru" class="lang-btn">Russian</button>
+            </div>
+          </div>
+        </div>
+        <button class="setting-btn"></button>
+      </div>
+      <div class="course">
+        <a href="https://github.com/LapPavel"><img class="mygithub" src="assets/svg/github.svg" alt="GitHub"></a>
+        <span class="year">2023</span>
+        <a href="https://rs.school/js/"><img class="rsschool" src="assets/svg/rs_school_js.svg" alt="RSSchool"></a>
+      </div>
+      <div class="todolist">
+        <div class="todolist-container">
+          <ul class="todolist-items">
+          </ul>
+          <input class="todolist-input" type="text">
+        </div>
+        <button class="todo-btn"></button>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
